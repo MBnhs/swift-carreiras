@@ -12,6 +12,30 @@
 		0FC34E2820154356004F15D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC34E2620154356004F15D3 /* Main.storyboard */; };
 		0FC34E2A20154356004F15D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC34E2920154356004F15D3 /* Assets.xcassets */; };
 		0FC34E2D20154356004F15D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC34E2B20154356004F15D3 /* LaunchScreen.storyboard */; };
+		0FCC14C52017D4AF00C7AF37 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14AF2017D4AF00C7AF37 /* arrow.png */; };
+		0FCC14C62017D4AF00C7AF37 /* BLOG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B02017D4AF00C7AF37 /* BLOG.png */; };
+		0FCC14C72017D4AF00C7AF37 /* colaboracao.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B12017D4AF00C7AF37 /* colaboracao.png */; };
+		0FCC14C82017D4AF00C7AF37 /* criatividade.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B22017D4AF00C7AF37 /* criatividade.png */; };
+		0FCC14C92017D4AF00C7AF37 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B32017D4AF00C7AF37 /* facebook.png */; };
+		0FCC14CA2017D4AF00C7AF37 /* googleplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B42017D4AF00C7AF37 /* googleplus.png */; };
+		0FCC14CB2017D4AF00C7AF37 /* heroshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B52017D4AF00C7AF37 /* heroshot.png */; };
+		0FCC14CC2017D4AF00C7AF37 /* ic-adm-financeiro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B62017D4AF00C7AF37 /* ic-adm-financeiro.png */; };
+		0FCC14CD2017D4AF00C7AF37 /* ic-atendimento.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B72017D4AF00C7AF37 /* ic-atendimento.png */; };
+		0FCC14CE2017D4AF00C7AF37 /* ic-comunicacao-mkt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B82017D4AF00C7AF37 /* ic-comunicacao-mkt.png */; };
+		0FCC14CF2017D4AF00C7AF37 /* ic-desenvolvimento-vendedores.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14B92017D4AF00C7AF37 /* ic-desenvolvimento-vendedores.png */; };
+		0FCC14D02017D4AF00C7AF37 /* ic-design.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14BA2017D4AF00C7AF37 /* ic-design.png */; };
+		0FCC14D12017D4AF00C7AF37 /* ic-engenharia.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14BB2017D4AF00C7AF37 /* ic-engenharia.png */; };
+		0FCC14D22017D4AF00C7AF37 /* ic-produto.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14BC2017D4AF00C7AF37 /* ic-produto.png */; };
+		0FCC14D32017D4AF00C7AF37 /* ic-trustnsafety.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14BD2017D4AF00C7AF37 /* ic-trustnsafety.png */; };
+		0FCC14D42017D4AF00C7AF37 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14BE2017D4AF00C7AF37 /* instagram.png */; };
+		0FCC14D52017D4AF00C7AF37 /* linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14BF2017D4AF00C7AF37 /* linkedin.png */; };
+		0FCC14D62017D4AF00C7AF37 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14C02017D4AF00C7AF37 /* logo.png */; };
+		0FCC14D72017D4AF00C7AF37 /* pinterest-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14C12017D4AF00C7AF37 /* pinterest-light.png */; };
+		0FCC14D82017D4AF00C7AF37 /* tec-ino.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14C22017D4AF00C7AF37 /* tec-ino.png */; };
+		0FCC14D92017D4AF00C7AF37 /* titulo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14C32017D4AF00C7AF37 /* titulo.png */; };
+		0FCC14DA2017D4AF00C7AF37 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14C42017D4AF00C7AF37 /* twitter.png */; };
+		0FCC14DD2017F06B00C7AF37 /* Cultura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC14DC2017F06B00C7AF37 /* Cultura.swift */; };
+		0FCC14E02017F12400C7AF37 /* CulturaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC14DF2017F12400C7AF37 /* CulturaDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +46,30 @@
 		0FC34E2920154356004F15D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FC34E2C20154356004F15D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FC34E2E20154356004F15D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCC14AF2017D4AF00C7AF37 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		0FCC14B02017D4AF00C7AF37 /* BLOG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLOG.png; sourceTree = "<group>"; };
+		0FCC14B12017D4AF00C7AF37 /* colaboracao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colaboracao.png; sourceTree = "<group>"; };
+		0FCC14B22017D4AF00C7AF37 /* criatividade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = criatividade.png; sourceTree = "<group>"; };
+		0FCC14B32017D4AF00C7AF37 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		0FCC14B42017D4AF00C7AF37 /* googleplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleplus.png; sourceTree = "<group>"; };
+		0FCC14B52017D4AF00C7AF37 /* heroshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heroshot.png; sourceTree = "<group>"; };
+		0FCC14B62017D4AF00C7AF37 /* ic-adm-financeiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-adm-financeiro.png"; sourceTree = "<group>"; };
+		0FCC14B72017D4AF00C7AF37 /* ic-atendimento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-atendimento.png"; sourceTree = "<group>"; };
+		0FCC14B82017D4AF00C7AF37 /* ic-comunicacao-mkt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-comunicacao-mkt.png"; sourceTree = "<group>"; };
+		0FCC14B92017D4AF00C7AF37 /* ic-desenvolvimento-vendedores.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-desenvolvimento-vendedores.png"; sourceTree = "<group>"; };
+		0FCC14BA2017D4AF00C7AF37 /* ic-design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-design.png"; sourceTree = "<group>"; };
+		0FCC14BB2017D4AF00C7AF37 /* ic-engenharia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-engenharia.png"; sourceTree = "<group>"; };
+		0FCC14BC2017D4AF00C7AF37 /* ic-produto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-produto.png"; sourceTree = "<group>"; };
+		0FCC14BD2017D4AF00C7AF37 /* ic-trustnsafety.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-trustnsafety.png"; sourceTree = "<group>"; };
+		0FCC14BE2017D4AF00C7AF37 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		0FCC14BF2017D4AF00C7AF37 /* linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedin.png; sourceTree = "<group>"; };
+		0FCC14C02017D4AF00C7AF37 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		0FCC14C12017D4AF00C7AF37 /* pinterest-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinterest-light.png"; sourceTree = "<group>"; };
+		0FCC14C22017D4AF00C7AF37 /* tec-ino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tec-ino.png"; sourceTree = "<group>"; };
+		0FCC14C32017D4AF00C7AF37 /* titulo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titulo.png; sourceTree = "<group>"; };
+		0FCC14C42017D4AF00C7AF37 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		0FCC14DC2017F06B00C7AF37 /* Cultura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cultura.swift; sourceTree = "<group>"; };
+		0FCC14DF2017F12400C7AF37 /* CulturaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturaDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,9 @@
 		0FC34E2120154356004F15D3 /* Carreiras */ = {
 			isa = PBXGroup;
 			children = (
+				0FCC14DE2017F11200C7AF37 /* DAO */,
+				0FCC14DB2017F04800C7AF37 /* Model */,
+				0FCC14AE2017D4AF00C7AF37 /* assets */,
 				0FC34E2220154356004F15D3 /* AppDelegate.swift */,
 				0FC34E2420154356004F15D3 /* ViewController.swift */,
 				0FC34E2620154356004F15D3 /* Main.storyboard */,
@@ -62,6 +113,52 @@
 				0FC34E2E20154356004F15D3 /* Info.plist */,
 			);
 			path = Carreiras;
+			sourceTree = "<group>";
+		};
+		0FCC14AE2017D4AF00C7AF37 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC14AF2017D4AF00C7AF37 /* arrow.png */,
+				0FCC14B02017D4AF00C7AF37 /* BLOG.png */,
+				0FCC14B12017D4AF00C7AF37 /* colaboracao.png */,
+				0FCC14B22017D4AF00C7AF37 /* criatividade.png */,
+				0FCC14B32017D4AF00C7AF37 /* facebook.png */,
+				0FCC14B42017D4AF00C7AF37 /* googleplus.png */,
+				0FCC14B52017D4AF00C7AF37 /* heroshot.png */,
+				0FCC14B62017D4AF00C7AF37 /* ic-adm-financeiro.png */,
+				0FCC14B72017D4AF00C7AF37 /* ic-atendimento.png */,
+				0FCC14B82017D4AF00C7AF37 /* ic-comunicacao-mkt.png */,
+				0FCC14B92017D4AF00C7AF37 /* ic-desenvolvimento-vendedores.png */,
+				0FCC14BA2017D4AF00C7AF37 /* ic-design.png */,
+				0FCC14BB2017D4AF00C7AF37 /* ic-engenharia.png */,
+				0FCC14BC2017D4AF00C7AF37 /* ic-produto.png */,
+				0FCC14BD2017D4AF00C7AF37 /* ic-trustnsafety.png */,
+				0FCC14BE2017D4AF00C7AF37 /* instagram.png */,
+				0FCC14BF2017D4AF00C7AF37 /* linkedin.png */,
+				0FCC14C02017D4AF00C7AF37 /* logo.png */,
+				0FCC14C12017D4AF00C7AF37 /* pinterest-light.png */,
+				0FCC14C22017D4AF00C7AF37 /* tec-ino.png */,
+				0FCC14C32017D4AF00C7AF37 /* titulo.png */,
+				0FCC14C42017D4AF00C7AF37 /* twitter.png */,
+			);
+			name = assets;
+			path = ../../../../Downloads/assets;
+			sourceTree = "<group>";
+		};
+		0FCC14DB2017F04800C7AF37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC14DC2017F06B00C7AF37 /* Cultura.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FCC14DE2017F11200C7AF37 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC14DF2017F12400C7AF37 /* CulturaDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +221,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FC34E2D20154356004F15D3 /* LaunchScreen.storyboard in Resources */,
+				0FCC14D32017D4AF00C7AF37 /* ic-trustnsafety.png in Resources */,
+				0FCC14C92017D4AF00C7AF37 /* facebook.png in Resources */,
+				0FCC14CC2017D4AF00C7AF37 /* ic-adm-financeiro.png in Resources */,
+				0FCC14C82017D4AF00C7AF37 /* criatividade.png in Resources */,
+				0FCC14D82017D4AF00C7AF37 /* tec-ino.png in Resources */,
+				0FCC14D92017D4AF00C7AF37 /* titulo.png in Resources */,
 				0FC34E2A20154356004F15D3 /* Assets.xcassets in Resources */,
+				0FCC14CA2017D4AF00C7AF37 /* googleplus.png in Resources */,
+				0FCC14CD2017D4AF00C7AF37 /* ic-atendimento.png in Resources */,
+				0FCC14CF2017D4AF00C7AF37 /* ic-desenvolvimento-vendedores.png in Resources */,
+				0FCC14C62017D4AF00C7AF37 /* BLOG.png in Resources */,
+				0FCC14DA2017D4AF00C7AF37 /* twitter.png in Resources */,
+				0FCC14D22017D4AF00C7AF37 /* ic-produto.png in Resources */,
+				0FCC14D62017D4AF00C7AF37 /* logo.png in Resources */,
+				0FCC14D42017D4AF00C7AF37 /* instagram.png in Resources */,
 				0FC34E2820154356004F15D3 /* Main.storyboard in Resources */,
+				0FCC14CE2017D4AF00C7AF37 /* ic-comunicacao-mkt.png in Resources */,
+				0FCC14D02017D4AF00C7AF37 /* ic-design.png in Resources */,
+				0FCC14C72017D4AF00C7AF37 /* colaboracao.png in Resources */,
+				0FCC14C52017D4AF00C7AF37 /* arrow.png in Resources */,
+				0FCC14D52017D4AF00C7AF37 /* linkedin.png in Resources */,
+				0FCC14D72017D4AF00C7AF37 /* pinterest-light.png in Resources */,
+				0FCC14CB2017D4AF00C7AF37 /* heroshot.png in Resources */,
+				0FCC14D12017D4AF00C7AF37 /* ic-engenharia.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCC14DD2017F06B00C7AF37 /* Cultura.swift in Sources */,
 				0FC34E2520154356004F15D3 /* ViewController.swift in Sources */,
 				0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */,
+				0FCC14E02017F12400C7AF37 /* CulturaDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

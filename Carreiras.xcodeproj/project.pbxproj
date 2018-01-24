@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F99133820193BAF00692FF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99133720193BAF00692FF8 /* TableViewCell.swift */; };
 		0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2220154356004F15D3 /* AppDelegate.swift */; };
 		0FC34E2520154356004F15D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2420154356004F15D3 /* ViewController.swift */; };
 		0FC34E2820154356004F15D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC34E2620154356004F15D3 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F99133720193BAF00692FF8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		0FC34E1F20154356004F15D3 /* Carreiras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carreiras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC34E2220154356004F15D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FC34E2420154356004F15D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				0FCC14AE2017D4AF00C7AF37 /* assets */,
 				0FC34E2220154356004F15D3 /* AppDelegate.swift */,
 				0FC34E2420154356004F15D3 /* ViewController.swift */,
+				0F99133720193BAF00692FF8 /* TableViewCell.swift */,
 				0FC34E2620154356004F15D3 /* Main.storyboard */,
 				0FC34E2920154356004F15D3 /* Assets.xcassets */,
 				0FC34E2B20154356004F15D3 /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F99133820193BAF00692FF8 /* TableViewCell.swift in Sources */,
 				0FCC14DD2017F06B00C7AF37 /* Cultura.swift in Sources */,
 				0FC34E2520154356004F15D3 /* ViewController.swift in Sources */,
 				0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */,

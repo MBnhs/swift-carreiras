@@ -9,13 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet weak var tabela: UITableView!
+    
+    @IBOutlet weak var tableCulturas: UITableView!
     
     let listaCultura:Array<Cultura> = CulturaDAO().listaCulturas()
 
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 150
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,10 +25,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let row = indexPath.row
-        let cultura = listaCultura[row]
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: nil)
-        cell.textLabel?.text = cultura.titulo
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        let cultura = listaCultura[indexPath.row]
+        cell.labelCulturaTitulo.text = cultura.titulo
+        cell.labelCulturaDescricao.text = cultura.descricao
+        cell.imageCultura.image = UIImage(named: cultura.icone)
         
         return cell
     }
@@ -36,8 +38,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabela.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
+        self.tableCulturas.dataSource = self
+        self.tableCulturas.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {

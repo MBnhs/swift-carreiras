@@ -20,7 +20,7 @@ class CulturaDAO: NSObject {
         let colaboracao = Cultura(icone: "colaboracao.png",
                                   titulo:"Colaboração",
                                   descricao: "Valorizamos o trabalho em equipe e as habilidades individuais. Incentivamos o empreendedorismo e formamos um time fora de série")
-        let tecnologia = Cultura(icone: "tec_ino.png",
+        let tecnologia = Cultura(icone: "tec-ino.png",
                                  titulo:"Tecnologia e Inovação",
                                  descricao: "Utilizamos a tecnologia para melhorar continuamente nosso negócio. Transformamos e conectamos pessoas")
         

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F825290201A7DD1000F90F1 /* RedeSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82528F201A7DD1000F90F1 /* RedeSocial.swift */; };
+		0F825292201A7DF8000F90F1 /* AreaAtuacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F825291201A7DF8000F90F1 /* AreaAtuacao.swift */; };
+		0F825294201A7E24000F90F1 /* RedeSocialDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F825293201A7E24000F90F1 /* RedeSocialDAO.swift */; };
+		0F825296201A7E49000F90F1 /* AreaAtuacaoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F825295201A7E49000F90F1 /* AreaAtuacaoDAO.swift */; };
+		0F82529A201A819B000F90F1 /* AreaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F825299201A819B000F90F1 /* AreaCollectionViewCell.swift */; };
 		0F99133820193BAF00692FF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99133720193BAF00692FF8 /* TableViewCell.swift */; };
 		0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2220154356004F15D3 /* AppDelegate.swift */; };
 		0FC34E2520154356004F15D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2420154356004F15D3 /* ViewController.swift */; };
@@ -40,6 +45,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F82528F201A7DD1000F90F1 /* RedeSocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeSocial.swift; sourceTree = "<group>"; };
+		0F825291201A7DF8000F90F1 /* AreaAtuacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAtuacao.swift; sourceTree = "<group>"; };
+		0F825293201A7E24000F90F1 /* RedeSocialDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeSocialDAO.swift; sourceTree = "<group>"; };
+		0F825295201A7E49000F90F1 /* AreaAtuacaoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaAtuacaoDAO.swift; sourceTree = "<group>"; };
+		0F825299201A819B000F90F1 /* AreaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F99133720193BAF00692FF8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		0FC34E1F20154356004F15D3 /* Carreiras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carreiras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC34E2220154356004F15D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F825298201A8177000F90F1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0F825299201A819B000F90F1 /* AreaCollectionViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		0FC34E1620154356004F15D3 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +122,7 @@
 		0FC34E2120154356004F15D3 /* Carreiras */ = {
 			isa = PBXGroup;
 			children = (
+				0F825298201A8177000F90F1 /* UI */,
 				0FCC14DE2017F11200C7AF37 /* DAO */,
 				0FCC14DB2017F04800C7AF37 /* Model */,
 				0FCC14AE2017D4AF00C7AF37 /* assets */,
@@ -152,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				0FCC14DC2017F06B00C7AF37 /* Cultura.swift */,
+				0F82528F201A7DD1000F90F1 /* RedeSocial.swift */,
+				0F825291201A7DF8000F90F1 /* AreaAtuacao.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				0FCC14DF2017F12400C7AF37 /* CulturaDAO.swift */,
+				0F825293201A7E24000F90F1 /* RedeSocialDAO.swift */,
+				0F825295201A7E49000F90F1 /* AreaAtuacaoDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -259,8 +282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F99133820193BAF00692FF8 /* TableViewCell.swift in Sources */,
+				0F82529A201A819B000F90F1 /* AreaCollectionViewCell.swift in Sources */,
+				0F825292201A7DF8000F90F1 /* AreaAtuacao.swift in Sources */,
 				0FCC14DD2017F06B00C7AF37 /* Cultura.swift in Sources */,
+				0F825296201A7E49000F90F1 /* AreaAtuacaoDAO.swift in Sources */,
+				0F825290201A7DD1000F90F1 /* RedeSocial.swift in Sources */,
 				0FC34E2520154356004F15D3 /* ViewController.swift in Sources */,
+				0F825294201A7E24000F90F1 /* RedeSocialDAO.swift in Sources */,
 				0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */,
 				0FCC14E02017F12400C7AF37 /* CulturaDAO.swift in Sources */,
 			);

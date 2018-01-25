@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var tableCulturas: UITableView!
+    @IBOutlet weak var colecaoAreas: UICollectionView!
     
     let listaCultura:Array<Cultura> = CulturaDAO().listaCulturas()
-
+    let listaAreas:Array<AreaAtuacao> = AreaAtuacaoDAO().listaAreasAtuacao()
+    let listaRedesSociais:Array<RedeSocial> = RedeSocialDAO().listaRedesSociais()
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
@@ -34,12 +36,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return listaAreas.count
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let celulaArea = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaArea", for: indexPath) as! AreaCollectionViewCell
+        celulaArea.backgroundColor = UIColor.blue
+        return celulaArea
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableCulturas.dataSource = self
         self.tableCulturas.delegate = self
+        self.colecaoAreas.dataSource = self
         
         
     }

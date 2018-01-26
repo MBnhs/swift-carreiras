@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource,
+UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var tableCulturas: UITableView!
     @IBOutlet weak var colecaoAreas: UICollectionView!
+    @IBOutlet weak var colecaoRedesSociais: UICollectionView!
     
     let listaCultura:Array<Cultura> = CulturaDAO().listaCulturas()
     let listaAreas:Array<AreaAtuacao> = AreaAtuacaoDAO().listaAreasAtuacao()
@@ -37,12 +39,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listaAreas.count
+        var numeroLinhas = 0
+        if (collectionView == self.colecaoAreas) {
+            numeroLinhas = listaAreas.count
+        }
+        
+        
+        return numeroLinhas
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaArea = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaArea", for: indexPath) as! AreaCollectionViewCell
-        celulaArea.backgroundColor = UIColor.blue
+        
+        let area = listaAreas[indexPath.row]
+        celulaArea.labelNome.text = area.nome
+        celulaArea.imageArea.image = UIImage(named: area.icone)
+        
         return celulaArea
     }
 
@@ -51,8 +63,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableCulturas.dataSource = self
         self.tableCulturas.delegate = self
         self.colecaoAreas.dataSource = self
+        self.colecaoAreas.delegate = self
         
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let largura = collectionView.bounds.width / 2
+        return CGSize(width: largura-10, height: 100)
     }
 
     override func didReceiveMemoryWarning() {

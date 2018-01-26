@@ -9,5 +9,7 @@
 import UIKit
 
 class AreaCollectionViewCell: UICollectionViewCell {
-    
+ 
+    @IBOutlet weak var imageArea: UIImageView!
+    @IBOutlet weak var labelNome: UILabel!
 }

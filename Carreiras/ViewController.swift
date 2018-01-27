@@ -39,23 +39,38 @@ UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        var numeroLinhas = 0
+        var numeroItens = 0
         if (collectionView == self.colecaoAreas) {
-            numeroLinhas = listaAreas.count
+            numeroItens = listaAreas.count
         }
         
+        if (collectionView == self.colecaoRedesSociais) {
+            numeroItens = listaRedesSociais.count
+        }
         
-        return numeroLinhas
+        return numeroItens
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celulaArea = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaArea", for: indexPath) as! AreaCollectionViewCell
         
-        let area = listaAreas[indexPath.row]
-        celulaArea.labelNome.text = area.nome
-        celulaArea.imageArea.image = UIImage(named: area.icone)
+        if (collectionView == self.colecaoAreas) {
+            let celulaArea = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaArea", for: indexPath) as! AreaCollectionViewCell
+            
+            let area = listaAreas[indexPath.row]
+            celulaArea.labelNome.text = area.nome
+            celulaArea.imageArea.image = UIImage(named: area.icone)
+            
+            return celulaArea
+        } else {
+            let celulaRedeSocial = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaRedeSocial", for: indexPath) as! RedeSocialCollectionViewCell
+            
+            let redeSocial = listaRedesSociais[indexPath.row]
+            celulaRedeSocial.imageRedeSocial.image = UIImage(named: redeSocial.icone)
+            
+            return celulaRedeSocial
+        }
         
-        return celulaArea
+        
     }
 
     override func viewDidLoad() {
@@ -64,6 +79,7 @@ UICollectionViewDelegateFlowLayout {
         self.tableCulturas.delegate = self
         self.colecaoAreas.dataSource = self
         self.colecaoAreas.delegate = self
+        self.colecaoRedesSociais.dataSource = self
         
         
     }

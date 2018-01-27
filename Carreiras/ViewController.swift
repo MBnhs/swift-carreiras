@@ -72,6 +72,13 @@ UICollectionViewDelegateFlowLayout {
         
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let destino = PaginaWebViewController()
+        let area = listaAreas[indexPath.row]
+        destino.link = area.link
+        navigationController?.pushViewController(destino, animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

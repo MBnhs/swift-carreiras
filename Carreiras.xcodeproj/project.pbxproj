@@ -14,6 +14,8 @@
 		0F82529A201A819B000F90F1 /* AreaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F825299201A819B000F90F1 /* AreaCollectionViewCell.swift */; };
 		0F99133820193BAF00692FF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99133720193BAF00692FF8 /* TableViewCell.swift */; };
 		0F9A5558201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A5557201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift */; };
+		0F9A5569201D334C0041A5DE /* PaginaWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */; };
+		0F9A556A201D334C0041A5DE /* PaginaWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */; };
 		0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2220154356004F15D3 /* AppDelegate.swift */; };
 		0FC34E2520154356004F15D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2420154356004F15D3 /* ViewController.swift */; };
 		0FC34E2820154356004F15D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC34E2620154356004F15D3 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		0F825299201A819B000F90F1 /* AreaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F99133720193BAF00692FF8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		0F9A5557201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeSocialCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaWebViewController.swift; sourceTree = "<group>"; };
+		0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaginaWebViewController.xib; sourceTree = "<group>"; };
 		0FC34E1F20154356004F15D3 /* Carreiras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carreiras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC34E2220154356004F15D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FC34E2420154356004F15D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		0FC34E1620154356004F15D3 = {
 			isa = PBXGroup;
 			children = (
+				0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */,
+				0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */,
 				0FC34E2120154356004F15D3 /* Carreiras */,
 				0FC34E2020154356004F15D3 /* Products */,
 			);
@@ -254,6 +260,7 @@
 				0FCC14C92017D4AF00C7AF37 /* facebook.png in Resources */,
 				0FCC14CC2017D4AF00C7AF37 /* ic-adm-financeiro.png in Resources */,
 				0FCC14C82017D4AF00C7AF37 /* criatividade.png in Resources */,
+				0F9A556A201D334C0041A5DE /* PaginaWebViewController.xib in Resources */,
 				0FCC14D82017D4AF00C7AF37 /* tec-ino.png in Resources */,
 				0FCC14D92017D4AF00C7AF37 /* titulo.png in Resources */,
 				0FC34E2A20154356004F15D3 /* Assets.xcassets in Resources */,
@@ -289,6 +296,7 @@
 				0F825292201A7DF8000F90F1 /* AreaAtuacao.swift in Sources */,
 				0FCC14DD2017F06B00C7AF37 /* Cultura.swift in Sources */,
 				0F825296201A7E49000F90F1 /* AreaAtuacaoDAO.swift in Sources */,
+				0F9A5569201D334C0041A5DE /* PaginaWebViewController.swift in Sources */,
 				0F825290201A7DD1000F90F1 /* RedeSocial.swift in Sources */,
 				0FC34E2520154356004F15D3 /* ViewController.swift in Sources */,
 				0F825294201A7E24000F90F1 /* RedeSocialDAO.swift in Sources */,

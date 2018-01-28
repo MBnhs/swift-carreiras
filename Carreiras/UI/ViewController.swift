@@ -79,8 +79,15 @@ UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let destino = PaginaWebViewController()
-        let area = listaAreas[indexPath.row]
-        destino.link = area.link
+        
+        if (collectionView == self.colecaoAreas) {
+            let area = listaAreas[indexPath.row]
+            destino.link = area.link
+        }
+        if (collectionView == self.colecaoRedesSociais){
+            let redeSocial = listaRedesSociais[indexPath.row]
+            destino.link = redeSocial.link
+        }
         navigationController?.pushViewController(destino, animated: true)
     }
 

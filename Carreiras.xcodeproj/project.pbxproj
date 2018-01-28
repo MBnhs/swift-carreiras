@@ -16,6 +16,7 @@
 		0F9A5558201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A5557201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift */; };
 		0F9A5569201D334C0041A5DE /* PaginaWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */; };
 		0F9A556A201D334C0041A5DE /* PaginaWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */; };
+		0F9A556F201D444F0041A5DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A556E201D444F0041A5DE /* GoogleService-Info.plist */; };
 		0FC34E2320154356004F15D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2220154356004F15D3 /* AppDelegate.swift */; };
 		0FC34E2520154356004F15D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC34E2420154356004F15D3 /* ViewController.swift */; };
 		0FC34E2820154356004F15D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC34E2620154356004F15D3 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		0FCC14DA2017D4AF00C7AF37 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC14C42017D4AF00C7AF37 /* twitter.png */; };
 		0FCC14DD2017F06B00C7AF37 /* Cultura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC14DC2017F06B00C7AF37 /* Cultura.swift */; };
 		0FCC14E02017F12400C7AF37 /* CulturaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC14DF2017F12400C7AF37 /* CulturaDAO.swift */; };
+		49A50B95CEF5A893789B50A8 /* Pods_Carreiras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D92FD06AF2698C971FF75 /* Pods_Carreiras.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,7 @@
 		0F9A5557201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeSocialCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaWebViewController.swift; sourceTree = "<group>"; };
 		0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaginaWebViewController.xib; sourceTree = "<group>"; };
+		0F9A556E201D444F0041A5DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FC34E1F20154356004F15D3 /* Carreiras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carreiras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC34E2220154356004F15D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FC34E2420154356004F15D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +91,9 @@
 		0FCC14C42017D4AF00C7AF37 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		0FCC14DC2017F06B00C7AF37 /* Cultura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cultura.swift; sourceTree = "<group>"; };
 		0FCC14DF2017F12400C7AF37 /* CulturaDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturaDAO.swift; sourceTree = "<group>"; };
+		AD0D92FD06AF2698C971FF75 /* Pods_Carreiras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carreiras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D9A420C310AB6B89C02548 /* Pods-Carreiras.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carreiras.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carreiras/Pods-Carreiras.debug.xcconfig"; sourceTree = "<group>"; };
+		C52EEB319C54CFD1D3BE16DA /* Pods-Carreiras.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carreiras.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carreiras/Pods-Carreiras.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A50B95CEF5A893789B50A8 /* Pods_Carreiras.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +111,10 @@
 		0F825298201A8177000F90F1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */,
+				0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */,
+				0FC34E2420154356004F15D3 /* ViewController.swift */,
+				0F99133720193BAF00692FF8 /* TableViewCell.swift */,
 				0F825299201A819B000F90F1 /* AreaCollectionViewCell.swift */,
 				0F9A5557201D0BAF0041A5DE /* RedeSocialCollectionViewCell.swift */,
 			);
@@ -113,10 +124,10 @@
 		0FC34E1620154356004F15D3 = {
 			isa = PBXGroup;
 			children = (
-				0F9A5567201D334C0041A5DE /* PaginaWebViewController.swift */,
-				0F9A5568201D334C0041A5DE /* PaginaWebViewController.xib */,
 				0FC34E2120154356004F15D3 /* Carreiras */,
 				0FC34E2020154356004F15D3 /* Products */,
+				50C3F2392E1822B87778B5A8 /* Pods */,
+				FD804E50DE1213C491D88096 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,13 +142,12 @@
 		0FC34E2120154356004F15D3 /* Carreiras */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A556E201D444F0041A5DE /* GoogleService-Info.plist */,
 				0F825298201A8177000F90F1 /* UI */,
 				0FCC14DE2017F11200C7AF37 /* DAO */,
 				0FCC14DB2017F04800C7AF37 /* Model */,
 				0FCC14AE2017D4AF00C7AF37 /* assets */,
 				0FC34E2220154356004F15D3 /* AppDelegate.swift */,
-				0FC34E2420154356004F15D3 /* ViewController.swift */,
-				0F99133720193BAF00692FF8 /* TableViewCell.swift */,
 				0FC34E2620154356004F15D3 /* Main.storyboard */,
 				0FC34E2920154356004F15D3 /* Assets.xcassets */,
 				0FC34E2B20154356004F15D3 /* LaunchScreen.storyboard */,
@@ -196,6 +206,23 @@
 			path = DAO;
 			sourceTree = "<group>";
 		};
+		50C3F2392E1822B87778B5A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9A420C310AB6B89C02548 /* Pods-Carreiras.debug.xcconfig */,
+				C52EEB319C54CFD1D3BE16DA /* Pods-Carreiras.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD804E50DE1213C491D88096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D92FD06AF2698C971FF75 /* Pods_Carreiras.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FC34E3120154356004F15D3 /* Build configuration list for PBXNativeTarget "Carreiras" */;
 			buildPhases = (
+				85FA91EEC1EE39AE3A061B27 /* [CP] Check Pods Manifest.lock */,
 				0FC34E1B20154356004F15D3 /* Sources */,
 				0FC34E1C20154356004F15D3 /* Frameworks */,
 				0FC34E1D20154356004F15D3 /* Resources */,
+				0432A02C74C7CD808E65F492 /* [CP] Embed Pods Frameworks */,
+				365FD240AC9FCF7B96FB09CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +296,7 @@
 				0FC34E2A20154356004F15D3 /* Assets.xcassets in Resources */,
 				0FCC14CA2017D4AF00C7AF37 /* googleplus.png in Resources */,
 				0FCC14CD2017D4AF00C7AF37 /* ic-atendimento.png in Resources */,
+				0F9A556F201D444F0041A5DE /* GoogleService-Info.plist in Resources */,
 				0FCC14CF2017D4AF00C7AF37 /* ic-desenvolvimento-vendedores.png in Resources */,
 				0FCC14C62017D4AF00C7AF37 /* BLOG.png in Resources */,
 				0FCC14DA2017D4AF00C7AF37 /* twitter.png in Resources */,
@@ -285,6 +316,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0432A02C74C7CD808E65F492 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Carreiras/Pods-Carreiras-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carreiras/Pods-Carreiras-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		365FD240AC9FCF7B96FB09CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carreiras/Pods-Carreiras-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85FA91EEC1EE39AE3A061B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carreiras-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FC34E1B20154356004F15D3 /* Sources */ = {
@@ -437,6 +526,7 @@
 		};
 		0FC34E3220154356004F15D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D9A420C310AB6B89C02548 /* Pods-Carreiras.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +541,7 @@
 		};
 		0FC34E3320154356004F15D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52EEB319C54CFD1D3BE16DA /* Pods-Carreiras.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

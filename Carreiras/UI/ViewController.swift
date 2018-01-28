@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout {
@@ -18,6 +20,8 @@ UICollectionViewDelegateFlowLayout {
     let listaCultura:Array<Cultura> = CulturaDAO().listaCulturas()
     let listaAreas:Array<AreaAtuacao> = AreaAtuacaoDAO().listaAreasAtuacao()
     let listaRedesSociais:Array<RedeSocial> = RedeSocialDAO().listaRedesSociais()
+    
+    var ref: DatabaseReference!
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
@@ -87,6 +91,10 @@ UICollectionViewDelegateFlowLayout {
         self.colecaoAreas.dataSource = self
         self.colecaoAreas.delegate = self
         self.colecaoRedesSociais.dataSource = self
+        
+        ref = Database.database().reference()
+        
+        ref.child("hello2").setValue("world2!!!")
         
         
     }

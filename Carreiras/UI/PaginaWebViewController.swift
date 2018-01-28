@@ -8,17 +8,21 @@
 
 import UIKit
 
-class PaginaWebViewController: UIViewController {
+class PaginaWebViewController: UIViewController, UIWebViewDelegate {
 
     var link : String = ""
     
     @IBOutlet weak var paginaWeb: UIWebView!
+    @IBOutlet weak var indicador: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.paginaWeb.delegate = self
+        indicador.startAnimating()
         let url = URL(string: link)
         let request = URLRequest(url:url!)
         paginaWeb.loadRequest(request)
+        
         // Do any additional setup after loading the view.
         
         
@@ -27,6 +31,10 @@ class PaginaWebViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        indicador.stopAnimating()
     }
     
 

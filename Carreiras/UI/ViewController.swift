@@ -17,9 +17,9 @@ UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var colecaoAreas: UICollectionView!
     @IBOutlet weak var colecaoRedesSociais: UICollectionView!
     
-    let listaCultura:Array<Cultura> = CulturaDAO().listaCulturas()
-    let listaAreas:Array<AreaAtuacao> = AreaAtuacaoDAO().listaAreasAtuacao()
-    let listaRedesSociais:Array<RedeSocial> = RedeSocialDAO().listaRedesSociais()
+    var listaCultura:Array<Cultura> = Array()
+    var listaAreas:Array<AreaAtuacao> = Array()
+    var listaRedesSociais:Array<RedeSocial> = Array()
     
     var ref: DatabaseReference!
     
@@ -91,12 +91,70 @@ UICollectionViewDelegateFlowLayout {
         self.colecaoAreas.dataSource = self
         self.colecaoAreas.delegate = self
         self.colecaoRedesSociais.dataSource = self
+        loadCultura()
+        loadAreas()
+        loadRedesSociais()
         
+        
+        
+    }
+    
+    func loadCultura() {
         ref = Database.database().reference()
         
-        ref.child("hello2").setValue("world2!!!")
+        ref.child("culturas").observe(.childAdded, with: { (snapshot) in
+            let data = snapshot.value as? [String:AnyObject]
+            let titulo:String = data!["titulo"] as! String
+            let descricao:String = data!["descricao"] as! String
+            
+            var iconeExtensao = ""
+            if let icone = data!["icone"] {
+                let iconeData = icone as! String
+                iconeExtensao = "\(iconeData.replacingOccurrences(of: "_", with: "-")).png"
+            }
+            
+
+            
+            let cultura = Cultura(icone: iconeExtensao,
+                                          titulo: titulo,
+                                          descricao: descricao)
+            self.listaCultura.append(cultura)
+            self.tableCulturas.reloadData()
+        })
+    }
+    
+    func loadAreas() {
+        ref = Database.database().reference()
         
+        ref.child("areasAtuacao").observe(.childAdded, with: { (snapshot) in
+            let data = snapshot.value as? [String:AnyObject]
+            let link:String = data!["link"] as! String
+            let nome:String = data!["nome"] as! String
+            let icone:String = data!["icone"] as! String
+            let iconeExtensao = "\(icone.replacingOccurrences(of: "_", with: "-")).png"
+            
+            let areaAtuacao = AreaAtuacao(icone: iconeExtensao,
+                                          nome: nome,
+                                        link:link)
+            self.listaAreas.append(areaAtuacao)
+            self.colecaoAreas.reloadData()
+        })
+    }
+    
+    func loadRedesSociais() {
+        ref = Database.database().reference()
         
+        ref.child("redesSociais").observe(.childAdded, with: { (snapshot) in
+            let data = snapshot.value as? [String:AnyObject]
+            let link:String = data!["link"] as! String
+            let icone:String = data!["icone"] as! String
+            let iconeExtensao = "\(icone.replacingOccurrences(of: "_", with: "-")).png"
+            
+            let redeSocial = RedeSocial(icone: iconeExtensao,
+                                        link:link)
+            self.listaRedesSociais.append(redeSocial)
+            self.colecaoRedesSociais.reloadData()
+        })
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
